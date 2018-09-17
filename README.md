@@ -15,8 +15,21 @@ docker-image: [lunarxlark/django-tutorial](https://hub.docker.com/r/lunarxlark/d
 - pytyhon3.7
 - django 2.1.1
 
-## How to usage
+## How to usage docker-image
 
 ```bash
 docker run -ti --rm --volume $(pwd):/opt lunarxlark/django-tutorial /bin/bash
+```
+
+## Start develop with django
+
+```bash
+$ django-admin startproject myblogapp
+$ ls l myblogapp
+manage.py myblogapp/
+$ ls myblogapp
+__init__.py   => django projectであることを表す
+settings.py   => app setting(lang、time_zone...etc)
+urls.py       => endpoint
+wsgi.py       => Web Server Gateway Interface(Webサーバ(apache,nginx)とのinterface)
 ```
