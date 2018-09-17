@@ -33,3 +33,10 @@ settings.py   => app setting(lang、time_zone...etc)
 urls.py       => endpoint
 wsgi.py       => Web Server Gateway Interface(Webサーバ(apache,nginx)とのinterface)
 ```
+
+## run web-server
+
+```bash
+$ cd /opt/myblogapp
+$ python manage.py runserver 0.0.0.0:8000
+```
