@@ -7,7 +7,7 @@ Udemy
 
 ## Environment
 
-docker-image: [lunarxlark/django-tutorial](https://hub.docker.com/r/continuumio/anaconda3/):latest
+docker-image: [lunarxlark/django-tutorial](https://hub.docker.com/r/lunarxlark/django-tutorial/):latest
 - Anaconda3 5.2.0
 - conda 4.5.11
 - pytyhon3.7
