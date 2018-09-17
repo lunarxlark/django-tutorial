@@ -11,4 +11,4 @@ docker-image: [lunarxlark/django-tutorial](https://hub.docker.com/r/continuumio/
 - Anaconda3 5.2.0
 - conda 4.5.11
 - pytyhon3.7
-- django
+- django 2.1.1
