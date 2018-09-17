@@ -40,3 +40,17 @@ wsgi.py       => Web Server Gateway Interface(Webサーバ(apache,nginx)とのin
 $ cd /opt/myblogapp
 $ python manage.py runserver 0.0.0.0:8000
 ```
+
+## migrate
+
+sqliteを用いてDB作成
+
+```bash
+$ python manage.py migrate
+```
+
+## application作成
+
+```bash
+$ python manage.py startapp posts
+```
