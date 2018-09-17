@@ -54,3 +54,29 @@ $ python manage.py migrate
 ```bash
 $ python manage.py startapp posts
 ```
+
+## model definition => migrate
+
+1. modify posts/models.py
+2. `python manage.py makemigrations`
+3. `python manage.py migrate`
+
+## connect db.sqlite3
+
+```bash
+$ ls db.sqlite3
+db.sqlite3
+$ sqlite3 db.sqlite3
+SQLite version 3.24.0 2018-06-04 19:24:41
+Enter ".help" for usage hints.
+sqlite>
+sqlite> .tables
+auth_group                  django_admin_log
+auth_group_permissions      django_content_type
+auth_permission             django_migrations
+auth_user                   django_session
+auth_user_groups            posts_post
+auth_user_user_permissions
+sqlite> select * from posts_post;
+sqlite> 
+```
