@@ -4,6 +4,12 @@
         <title>posts list</title>
     </head>
     <body>
-        <h2>This page is posts list</h2>
+        <h1>This page is posts list</h1>
+
+        <h2>latest post</h2>
+
+        {% for post in posts.all %}
+            {{ post.title}}<br /r>
+        {% endfor %}
     </body>
 </html>
