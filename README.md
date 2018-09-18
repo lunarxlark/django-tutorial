@@ -17,9 +17,8 @@ docker-image: [lunarxlark/django-tutorial](https://hub.docker.com/r/lunarxlark/d
 
 ## How to usage docker-image
 
-```bash
-docker run -ti --rm --volume $(pwd):/opt lunarxlark/django-tutorial /bin/bash
-```
+`docker run -ti --rm --volume $(pwd):/opt lunarxlark/django-tutorial /bin/bash`
+`docker run -ti --rm --volume $(pwd):/opt -p 8000:8000 lunarxlark/myblogapp`
 
 ## Start develop with django
 
