@@ -1,3 +1,12 @@
-{{ post.title }}<br />
-{{ post.published }}<br />
-{{ post.body }}<br />
+<!DOCTYPE lang='ja'>
+<html>
+    <head>
+        <title>{{ post.id }}</title>
+    </head>
+    <body>
+        <h1>{{ post.title }}<br /></h1>
+        {{ post.published }}<br /><br />
+        {{ post.body }}<br />
+        <img src={{ post.image.url}} />
+    </body>
+</html>
