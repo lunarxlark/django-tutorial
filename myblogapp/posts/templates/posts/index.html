@@ -9,9 +9,10 @@
         <h2>latest post</h2>
 
         {% for post in posts.all %}
-            {{ post.title}} : {{ post.published }}<br /r>
-            <img src="{{ post.image.url }}" /><br />
+            #{{ post.id }} : {{ post.title}}<br />
+            {{ post.published }}<br /r>
             {{ post.summary }} <br /><br />
+            <img src="{{ post.image.url }}" /><br />
         {% endfor %}
     </body>
 </html>

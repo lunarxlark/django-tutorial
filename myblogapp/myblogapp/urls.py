@@ -15,12 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include, re_path
-
 # staticの方がsettingより先に記述する必要がある
 from django.conf.urls.static import static
 from django.conf import settings
+from posts import views
 
 urlpatterns = [
     re_path(r'posts/', include('posts.urls')),
+    re_path(r'^posts/(?P<post_id>[0-9]+)/$', views.post_detail, name="post_detail"),
     path('admin/', admin.site.urls),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
