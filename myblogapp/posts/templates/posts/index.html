@@ -54,7 +54,7 @@
             <a href="{% url 'post_detail' post.id %}">#{{ post.id }} : {{ post.title}}</a><br />
             {{ post.published }}<br /r
             {{ post.summary }} <br /><br />
-            <img src="{{ post.image.url }}" /><br />
+            <img src="{{ post.image.url }}" class="img-fluid img-thumbnail rounded" /><br />
         {% endfor %}
             <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
