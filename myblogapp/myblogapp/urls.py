@@ -22,6 +22,6 @@ from posts import views
 
 urlpatterns = [
     re_path(r'posts/', include('posts.urls')),
-    re_path(r'^posts/(?P<post_id>[0-9]+)/$', views.post_detail, name="post_detail"),
+    re_path(r'^posts/(?P<post_id>[0-9]+)/$', views.post_detail, name='post_detail'),
     path('admin/', admin.site.urls),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
