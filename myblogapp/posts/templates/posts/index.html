@@ -20,41 +20,36 @@
                         <li class="nav-item active">
                           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Link</a>
-                        </li>
                         <li class="nav-item dropdown">
                           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dropdown
+                              Profile
                           </a>
                           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="https://github.com/lunarxlark">Github</a>
+                            <a class="dropdown-item" href="https://qiita.com/lunarxlark">Qiita</a>
+                            <a class="dropdown-item" href="https://twitter.com/lunarxlark">Twitter</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item" href="https://github.com/lunarxlark?tab=repositories">Repository</a>
                           </div>
                         </li>
-                        <li class="nav-item">
-                          <a class="nav-link disabled" href="#">Disabled</a>
-                        </li>
                       </ul>
-                      <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                      </form>
                     </div>
                   </nav>
                   <div class="container ">
 
         <!--<h1>This page is posts list</h1>-->
+        <h1 class="text-center">Welcom to Lunarxlark's Blog</h1><br /><br />
+        {% load static %}
+        <img src="{% static 'posts/test.png' %}" class="img-fluid" style="max-height: 200px;" />
+
+                    <hr>
 
         <h2>latest post</h2>
-
         {% for post in posts.all %}
             <a href="{% url 'post_detail' post.id %}">#{{ post.id }} : {{ post.title}}</a><br />
             {{ post.published }}<br /r
             {{ post.summary }} <br /><br />
-            <img src="{{ post.image.url }}" class="img-fluid img-thumbnail rounded" /><br />
+            <img src="{{ post.image.url }}" class="img-fluid img-thumbnail rounded" style="max-height: 200px;" /><br />
         {% endfor %}
             <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
