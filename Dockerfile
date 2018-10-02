@@ -17,6 +17,7 @@ RUN . /anaconda3/etc/profile.d/conda.sh && \
     conda create -n django-tutorial && \
     conda activate django-tutorial && \
     conda install django -y
+    pip install Pillow
 EXPOSE 8000
 
 CMD ["/anaconda3/envs/django-tutorial/bin/python", "/opt/myblogapp/manage.py", "runserver", "0.0.0.0:8000"]
